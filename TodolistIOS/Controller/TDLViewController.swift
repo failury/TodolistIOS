@@ -10,8 +10,12 @@ import UIKit
 
 class TDLViewController: UITableViewController {
     var listArray = ["first row", "second row", "third row"]
+    let defaults = UserDefaults.standard
     override func viewDidLoad() {
         super.viewDidLoad()
+        if let temp = defaults.array(forKey: "TodoListArray") as? [String]{
+            listArray = temp
+        }
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -38,6 +42,7 @@ class TDLViewController: UITableViewController {
         let action = UIAlertAction(title: "Add", style: .default) { (action) in
             print(textField.text!)
             self.listArray.append(textField.text!)
+            self.defaults.setValue(self.listArray, forKey: "TodoListArray")
             self.tableView.reloadData()
         }
         addingPrompt.addTextField { (textfield) in
