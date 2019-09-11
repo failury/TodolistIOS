@@ -9,7 +9,7 @@
 import UIKit
 
 class TDLViewController: UITableViewController {
-    let listArray = ["first row", "second row", "third row"]
+    var listArray = ["first row", "second row", "third row"]
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -30,6 +30,22 @@ class TDLViewController: UITableViewController {
             tableView.cellForRow(at: indexPath)?.accessoryType = .checkmark
         }
         
+    }
+    
+    @IBAction func plusButtonPreseed(_ sender: UIBarButtonItem) {
+        var textField = UITextField()
+        let addingPrompt = UIAlertController(title: "Add new Todo", message: "", preferredStyle: .alert)
+        let action = UIAlertAction(title: "Add", style: .default) { (action) in
+            print(textField.text!)
+            self.listArray.append(textField.text!)
+            self.tableView.reloadData()
+        }
+        addingPrompt.addTextField { (textfield) in
+            textfield.placeholder = "Create new item"
+            textField = textfield
+        }
+        addingPrompt.addAction(action)
+        present(addingPrompt,animated: true, completion: nil)
     }
     
 }
