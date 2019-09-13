@@ -8,7 +8,7 @@
 
 import UIKit
 import CoreData
-class TDLViewController: UITableViewController {
+class TDLViewController: UITableViewController{
     let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     var listArray = [TodoItem]()
     //MARK: load local data
@@ -52,13 +52,12 @@ class TDLViewController: UITableViewController {
         present(addingPrompt,animated: true, completion: nil)
     }
     
-    func loadData(){
-        let request : NSFetchRequest<TodoItem> = TodoItem.fetchRequest()
+    func loadData(with request: NSFetchRequest<TodoItem> = TodoItem.fetchRequest()){
         do {
            listArray = try context.fetch(request)
             
         } catch {
-            print("Fetching error")
+            print("Fetching error\(error)")
         }
         
     }
@@ -67,10 +66,32 @@ class TDLViewController: UITableViewController {
         do{
            try context.save()
         } catch {
-           print("Saving context error")
+           print("Saving context error\(error)")
         }
         self.tableView.reloadData()
     }
     
+    
 }
+//MARK: Search bar methods
+extension TDLViewController: UISearchBarDelegate{
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        let request: NSFetchRequest<TodoItem> = TodoItem.fetchRequest()
+        request.predicate = NSPredicate(format: "title CONTAINS[cd] %@", searchBar.text!)
+        //sort the data in ascend order
+        request.sortDescriptors = [NSSortDescriptor(key: "title", ascending: true)]
+        //update the table
+        loadData(with: request)
 
+    }
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        if searchBar.text?.count == 0 {
+            //go back to original list once user clear the textfield
+            loadData()
+            //relinquish as the first responder
+            DispatchQueue.main.async {
+                searchBar.resignFirstResponder()
+            }
+        }
+    }
+}
