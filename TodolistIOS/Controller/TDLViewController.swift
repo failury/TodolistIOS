@@ -9,14 +9,19 @@
 import UIKit
 import CoreData
 class TDLViewController: UITableViewController{
+    //MARK: load local data
     let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     var listArray = [TodoItem]()
-    //MARK: load local data
+    var selectedCategory : Category? {
+    //once the specific category is selected, load the data from database
+        didSet{
+            loadData()
+        }
+    }
+
     
     override func viewDidLoad() {
-        print(FileManager.default.urls(for: .documentDirectory, in: .userDomainMask))
         super.viewDidLoad()
-        loadData()
     }
     //MARK: Override TableView methods
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -41,6 +46,7 @@ class TDLViewController: UITableViewController{
             let item = TodoItem(context: self.context)
             item.title = String(textField.text!)
             item.mark = false
+            item.parentCategory = self.selectedCategory
             self.listArray.append(item)
             self.saveData()
         }
@@ -52,14 +58,22 @@ class TDLViewController: UITableViewController{
         present(addingPrompt,animated: true, completion: nil)
     }
     
-    func loadData(with request: NSFetchRequest<TodoItem> = TodoItem.fetchRequest()){
+    func loadData(with request: NSFetchRequest<TodoItem> = TodoItem.fetchRequest(), predicate: NSPredicate? = nil){
+        let categoryPredicate = NSPredicate(format: "parentCategory.categoryName MATCHES %@", selectedCategory!.categoryName!)
+        if let additionalPredicate = predicate {
+            // for searching todo items case
+            request.predicate = NSCompoundPredicate(andPredicateWithSubpredicates: [categoryPredicate, additionalPredicate])
+        } else {
+            request.predicate = categoryPredicate
+        }
+
         do {
            listArray = try context.fetch(request)
             
         } catch {
             print("Fetching error\(error)")
         }
-        
+        self.tableView.reloadData()
     }
     
     func saveData(){
@@ -77,11 +91,11 @@ class TDLViewController: UITableViewController{
 extension TDLViewController: UISearchBarDelegate{
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         let request: NSFetchRequest<TodoItem> = TodoItem.fetchRequest()
-        request.predicate = NSPredicate(format: "title CONTAINS[cd] %@", searchBar.text!)
+        let predicate = NSPredicate(format: "title CONTAINS[cd] %@", searchBar.text!)
         //sort the data in ascend order
         request.sortDescriptors = [NSSortDescriptor(key: "title", ascending: true)]
         //update the table
-        loadData(with: request)
+        loadData(with: request, predicate: predicate)
 
     }
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
