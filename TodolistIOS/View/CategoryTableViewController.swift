@@ -7,15 +7,14 @@
 //
 
 import UIKit
-import CoreData
+import RealmSwift
 class CategoryTableViewController: UITableViewController {
     //MARK: load local data
-    
-    let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
-    var categoryArray = [Category]()
+    let realm = try! Realm()
+    var folderArray : Results<Folder>?
     override func viewDidLoad() {
         super.viewDidLoad()
-        loadData()
+        loadFolders()
     }
 
 
@@ -24,10 +23,9 @@ class CategoryTableViewController: UITableViewController {
         var textField = UITextField()
         let addingPrompt = UIAlertController(title: "Add new Category", message: "", preferredStyle: .alert)
         let action = UIAlertAction(title: "Add", style: .default) { (action) in
-            let category = Category(context: self.context)
-            category.categoryName = String(textField.text!)
-            self.categoryArray.append(category)
-            self.saveData()
+            let folder = Folder()
+            folder.folderName = String(textField.text!)
+            self.saveFolders(folder: folder)
         }
         addingPrompt.addTextField { (textfield) in
             textfield.placeholder = "Enter New Category Name"
@@ -38,11 +36,11 @@ class CategoryTableViewController: UITableViewController {
     }
     //MARK: TableView Datasource Methods
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return categoryArray.count
+        return folderArray?.count ?? 1
     }
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "CategoryCell", for: indexPath)
-        cell.textLabel?.text = categoryArray[indexPath.row].categoryName
+        cell.textLabel?.text = folderArray?[indexPath.row].folderName ?? "Nothing added yet "
         return cell
     }
 
@@ -55,23 +53,20 @@ class CategoryTableViewController: UITableViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let destinationViewController = segue.destination as! TDLViewController
         if let indexPath = tableView.indexPathForSelectedRow {
-            destinationViewController.selectedCategory = categoryArray[indexPath.row]
+            destinationViewController.selectedCategory = folderArray?[indexPath.row]
         }
         }
         
     //MARK: Data Manipulation Methods
-    func loadData(with request: NSFetchRequest<Category> = Category.fetchRequest()){
-        do {
-            categoryArray = try context.fetch(request)
-            
-        } catch {
-            print("Fetching error\(error)")
-        }
+    func loadFolders(){
+        folderArray = realm.objects(Folder.self)
         tableView.reloadData()
     }
-    func saveData(){
+    func saveFolders(folder: Folder){
         do{
-            try context.save()
+            try realm.write {
+                realm.add(folder)
+            }
         } catch {
             print("Saving context error\(error)")
         }
