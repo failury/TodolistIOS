@@ -8,8 +8,11 @@
 
 import UIKit
 import RealmSwift
+import ChameleonFramework
 class TDLViewController: SwipeTableViewController{
-
+    @IBOutlet weak var searchBar: UISearchBar!
+    
+    
     //MARK: load local data
     var listArray : Results<todoItem>?
     let realm = try! Realm()
@@ -23,6 +26,23 @@ class TDLViewController: SwipeTableViewController{
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView.separatorStyle = .none
+       
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        navigationController?.navigationBar.barTintColor = UIColor(hexString: selectedCategory!.folderColor)
+        title = selectedCategory!.folderName
+        navigationController?.navigationBar.tintColor = ContrastColorOf(UIColor(hexString: selectedCategory!.folderColor)!, returnFlat: true)
+        navigationController?.navigationBar.largeTitleTextAttributes = [NSAttributedString.Key.foregroundColor : ContrastColorOf(UIColor(hexString: selectedCategory!.folderColor)!, returnFlat: true)]
+        searchBar.barTintColor = UIColor(hexString: selectedCategory!.folderColor)
+    }
+    override func viewWillDisappear(_ animated: Bool) {
+        guard let originalColor = UIColor(hexString: "0089FF") else {
+            fatalError()
+        }
+        navigationController?.navigationBar.barTintColor = originalColor
+        navigationController?.navigationBar.tintColor = FlatWhite()
+        navigationController?.navigationBar.largeTitleTextAttributes = [NSAttributedString.Key.foregroundColor : FlatWhite()]
     }
     //MARK: Override TableView methods
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -33,6 +53,10 @@ class TDLViewController: SwipeTableViewController{
         if let item = listArray?[indexPath.row] {
             cell.textLabel?.text = item.title
             cell.accessoryType = item.mark ? .checkmark : .none
+            if let color = UIColor.init(hexString: selectedCategory?.folderColor ?? UIColor.white.hexValue())?.darken(byPercentage: CGFloat(indexPath.row )/CGFloat( listArray!.count)) {
+            cell.backgroundColor = color
+                cell.textLabel?.textColor = ContrastColorOf(color, returnFlat: true)
+            }
         } else {
 //MARK: - TODO for some reason the "No todoitems at the moment" isnt showing at all even though there is no todoitems at the moment maybe fix this bug in the future
             cell.textLabel?.text = "No todoitems at the moment"
@@ -63,7 +87,6 @@ class TDLViewController: SwipeTableViewController{
                     let item = todoItem()
                     item.title = String(textField.text!)
                     item.mark = false
-                    item.dateCreated = Date()
                     currentfolder.todoItems.append(item)
                 }
                 } catch {

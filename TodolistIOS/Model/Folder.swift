@@ -10,5 +10,6 @@ import Foundation
 import RealmSwift
 class Folder : Object {
     @objc dynamic var folderName : String = ""
+    @objc dynamic var folderColor : String = ""
     let todoItems = List<todoItem>()
 }

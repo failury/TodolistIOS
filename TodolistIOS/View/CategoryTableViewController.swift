@@ -8,14 +8,16 @@
 
 import UIKit
 import RealmSwift
-
+import ChameleonFramework
 class CategoryTableViewController: SwipeTableViewController{
     //MARK: load local data
     let realm = try! Realm()
     var folderArray : Results<Folder>?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         loadFolders()
+        tableView.separatorStyle = .none
     }
 
 
@@ -26,11 +28,16 @@ class CategoryTableViewController: SwipeTableViewController{
         let action = UIAlertAction(title: "Add", style: .default) { (action) in
             let folder = Folder()
             folder.folderName = String(textField.text!)
+            folder.folderColor = UIColor.randomFlat.hexValue()
             self.saveFolders(folder: folder)
         }
         addingPrompt.addTextField { (textfield) in
             textfield.placeholder = "Enter New Category Name"
+            if textfield.text == "" {
+                textField.text = "Untitled"
+            } else {
             textField = textfield
+            }
         }
         addingPrompt.addAction(action)
         present(addingPrompt,animated: true, completion: nil)
@@ -44,6 +51,7 @@ class CategoryTableViewController: SwipeTableViewController{
         let cell = super.tableView(tableView, cellForRowAt: indexPath)
 //MARK: - TODO for some reason the "Nothing added yet" isnt showing at all even though there is not category in the moment maybe fix this bug in the future
         cell.textLabel?.text = folderArray?[indexPath.row].folderName ?? "Nothing added yet"
+        cell.backgroundColor = UIColor.init(hexString: folderArray?[indexPath.row].folderColor ?? UIColor.randomFlat.hexValue())
         return cell
     }
 
