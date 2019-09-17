@@ -15,6 +15,7 @@
 		C53A4D5E2327F73100E9E97F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C53A4D5C2327F73100E9E97F /* LaunchScreen.storyboard */; };
 		C55E0168232E4FEE00824AF1 /* todoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55E0167232E4FEE00824AF1 /* todoItem.swift */; };
 		C55E016A232E500900824AF1 /* Folder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55E0169232E500900824AF1 /* Folder.swift */; };
+		C579E0A12330B88400C640F6 /* SwipeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C579E0A02330B88400C640F6 /* SwipeTableViewController.swift */; };
 		C5E19358232BC8A70064BBB3 /* CategoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5E19357232BC8A70064BBB3 /* CategoryTableViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +32,7 @@
 		C53A4D5F2327F73100E9E97F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C55E0167232E4FEE00824AF1 /* todoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = todoItem.swift; sourceTree = SOURCE_ROOT; };
 		C55E0169232E500900824AF1 /* Folder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Folder.swift; sourceTree = "<group>"; };
+		C579E0A02330B88400C640F6 /* SwipeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SwipeTableViewController.swift; path = TodolistIOS/Model/SwipeTableViewController.swift; sourceTree = SOURCE_ROOT; };
 		C5E19357232BC8A70064BBB3 /* CategoryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CategoryTableViewController.swift; path = TodolistIOS/View/CategoryTableViewController.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -115,6 +117,7 @@
 		C53A4D67232905E600E9E97F /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				C579E0A02330B88400C640F6 /* SwipeTableViewController.swift */,
 				C5E19357232BC8A70064BBB3 /* CategoryTableViewController.swift */,
 				C53A4D552327F72F00E9E97F /* TDLViewController.swift */,
 			);
@@ -240,6 +243,7 @@
 				C53A4D542327F72F00E9E97F /* AppDelegate.swift in Sources */,
 				C55E0168232E4FEE00824AF1 /* todoItem.swift in Sources */,
 				C5E19358232BC8A70064BBB3 /* CategoryTableViewController.swift in Sources */,
+				C579E0A12330B88400C640F6 /* SwipeTableViewController.swift in Sources */,
 				C55E016A232E500900824AF1 /* Folder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -8,7 +8,7 @@
 
 import UIKit
 import RealmSwift
-class TDLViewController: UITableViewController{
+class TDLViewController: SwipeTableViewController{
 
     //MARK: load local data
     var listArray : Results<todoItem>?
@@ -29,7 +29,7 @@ class TDLViewController: UITableViewController{
         return listArray?.count ?? 1
     }
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "ToDoCell", for: indexPath)
+        let cell = super.tableView(tableView, cellForRowAt: indexPath)
         if let item = listArray?[indexPath.row] {
             cell.textLabel?.text = item.title
             cell.accessoryType = item.mark ? .checkmark : .none
@@ -85,15 +85,19 @@ class TDLViewController: UITableViewController{
         listArray = selectedCategory!.todoItems.sorted(byKeyPath: "title", ascending: true)
         self.tableView.reloadData()
     }
-    
-//    func saveData(){
-//        do{
-//           try context.save()
-//        } catch {
-//           print("Saving context error\(error)")
-//        }
-//        self.tableView.reloadData()
-//    }
+    override func updateRealm(at indexPath: IndexPath) {
+        if let item = listArray?[indexPath.row] {
+            do {
+                try realm.write {
+                    realm.delete(item)
+                }
+            } catch {
+                print(error)
+            }
+            
+        }
+    }
+
     
     
 }

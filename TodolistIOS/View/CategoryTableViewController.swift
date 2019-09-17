@@ -8,8 +8,8 @@
 
 import UIKit
 import RealmSwift
-import SwipeCellKit
-class CategoryTableViewController: UITableViewController {
+
+class CategoryTableViewController: SwipeTableViewController{
     //MARK: load local data
     let realm = try! Realm()
     var folderArray : Results<Folder>?
@@ -39,8 +39,9 @@ class CategoryTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return folderArray?.count ?? 1
     }
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "CategoryCell", for: indexPath)
+        let cell = super.tableView(tableView, cellForRowAt: indexPath)
 //MARK: - TODO for some reason the "Nothing added yet" isnt showing at all even though there is not category in the moment maybe fix this bug in the future
         cell.textLabel?.text = folderArray?[indexPath.row].folderName ?? "Nothing added yet"
         return cell
@@ -73,5 +74,16 @@ class CategoryTableViewController: UITableViewController {
             print("Saving context error\(error)")
         }
         tableView.reloadData()
+    }
+    override func updateRealm(at indexPath: IndexPath) {
+        if let folderDelete = self.folderArray?[indexPath.row]{
+            do {
+                try self.realm.write {
+                    self.realm.delete(folderDelete)
+                }
+            } catch {
+                print(error)
+            }
+        }
     }
 }
