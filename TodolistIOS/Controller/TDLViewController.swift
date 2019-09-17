@@ -34,6 +34,7 @@ class TDLViewController: UITableViewController{
             cell.textLabel?.text = item.title
             cell.accessoryType = item.mark ? .checkmark : .none
         } else {
+//MARK: - TODO for some reason the "No todoitems at the moment" isnt showing at all even though there is no todoitems at the moment maybe fix this bug in the future
             cell.textLabel?.text = "No todoitems at the moment"
         }
         return cell
@@ -62,8 +63,8 @@ class TDLViewController: UITableViewController{
                     let item = todoItem()
                     item.title = String(textField.text!)
                     item.mark = false
+                    item.dateCreated = Date()
                     currentfolder.todoItems.append(item)
-                    
                 }
                 } catch {
                     print(error)
@@ -100,7 +101,7 @@ class TDLViewController: UITableViewController{
 extension TDLViewController: UISearchBarDelegate{
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         listArray = listArray?.filter("title CONTAINS[cd] %@", searchBar.text!).sorted(byKeyPath: "title", ascending: true)
-
+        tableView.reloadData()
     }
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         if searchBar.text?.count == 0 {

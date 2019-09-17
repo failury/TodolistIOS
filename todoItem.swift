@@ -11,5 +11,6 @@ import RealmSwift
 class todoItem : Object{
     @objc dynamic var title : String = ""
     @objc dynamic var mark : Bool = false
+    @objc dynamic var dateCreated : Date?
     var parentFolder = LinkingObjects(fromType: Folder.self, property: "todoItems")
 }
