@@ -86,6 +86,9 @@ class TDLViewController: SwipeTableViewController{
                 try self.realm.write {
                     let item = todoItem()
                     item.title = String(textField.text!)
+                    if String(textField.text!) == ""  {
+                        item.title = "Empty task"
+                    }
                     item.mark = false
                     currentfolder.todoItems.append(item)
                 }
