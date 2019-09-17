@@ -28,16 +28,15 @@ class CategoryTableViewController: SwipeTableViewController{
         let action = UIAlertAction(title: "Add", style: .default) { (action) in
             let folder = Folder()
             folder.folderName = String(textField.text!)
+            if String(textField.text!) == "" {
+                folder.folderName = "Untitled"
+            }
             folder.folderColor = UIColor.randomFlat.hexValue()
             self.saveFolders(folder: folder)
         }
         addingPrompt.addTextField { (textfield) in
             textfield.placeholder = "Enter New Category Name"
-            if textfield.text == "" {
-                textField.text = "Untitled"
-            } else {
             textField = textfield
-            }
         }
         addingPrompt.addAction(action)
         present(addingPrompt,animated: true, completion: nil)
