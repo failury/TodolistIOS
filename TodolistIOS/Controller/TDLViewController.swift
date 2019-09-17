@@ -34,6 +34,7 @@ class TDLViewController: SwipeTableViewController{
         title = selectedCategory!.folderName
         navigationController?.navigationBar.tintColor = ContrastColorOf(UIColor(hexString: selectedCategory!.folderColor)!, returnFlat: true)
         navigationController?.navigationBar.largeTitleTextAttributes = [NSAttributedString.Key.foregroundColor : ContrastColorOf(UIColor(hexString: selectedCategory!.folderColor)!, returnFlat: true)]
+        navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor : ContrastColorOf(UIColor(hexString: selectedCategory!.folderColor)!, returnFlat: true)]
         searchBar.barTintColor = UIColor(hexString: selectedCategory!.folderColor)
     }
     override func viewWillDisappear(_ animated: Bool) {

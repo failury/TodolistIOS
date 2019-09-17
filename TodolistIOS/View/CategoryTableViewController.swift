@@ -18,6 +18,7 @@ class CategoryTableViewController: SwipeTableViewController{
         super.viewDidLoad()
         loadFolders()
         tableView.separatorStyle = .none
+        navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor : FlatWhite()]
     }
 
 

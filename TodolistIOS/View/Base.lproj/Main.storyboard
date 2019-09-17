@@ -37,7 +37,7 @@
                             <outlet property="delegate" destination="2ZF-df-UCB" id="CID-Qd-nYk"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Todo Items" id="8pt-Bp-lYW">
+                    <navigationItem key="navigationItem" title="Todo Items" largeTitleDisplayMode="always" id="8pt-Bp-lYW">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="Ee5-Vp-EWz">
                             <connections>
                                 <action selector="plusButtonPreseed:" destination="2ZF-df-UCB" id="4VE-b5-tpK"/>
@@ -101,7 +101,7 @@
                             <outlet property="delegate" destination="gsK-Ur-iNb" id="N4N-tW-gee"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Todo List" id="SOH-CW-GCE">
+                    <navigationItem key="navigationItem" title="Todo List" largeTitleDisplayMode="always" id="SOH-CW-GCE">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="mRC-ok-D8d">
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
