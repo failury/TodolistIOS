@@ -32,7 +32,7 @@ class CategoryTableViewController: SwipeTableViewController{
             if String(textField.text!) == "" {
                 folder.folderName = "Untitled"
             }
-            folder.folderColor = UIColor.randomFlat.hexValue()
+            folder.folderColor = UIColor.randomFlat().hexValue()
             self.saveFolders(folder: folder)
         }
         addingPrompt.addTextField { (textfield) in
@@ -51,7 +51,7 @@ class CategoryTableViewController: SwipeTableViewController{
         let cell = super.tableView(tableView, cellForRowAt: indexPath)
 //MARK: - TODO for some reason the "Nothing added yet" isnt showing at all even though there is not category in the moment maybe fix this bug in the future
         cell.textLabel?.text = folderArray?[indexPath.row].folderName ?? "Nothing added yet"
-        cell.backgroundColor = UIColor.init(hexString: folderArray?[indexPath.row].folderColor ?? UIColor.randomFlat.hexValue())
+        cell.backgroundColor = UIColor.init(hexString: folderArray?[indexPath.row].folderColor ?? UIColor.randomFlat().hexValue())
         return cell
     }
 
