@@ -1,0 +1,6 @@
+framework module Pods_ToDoPlanner_ToDoPlannerUITests {
+  umbrella header "Pods-ToDoPlanner-ToDoPlannerUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
