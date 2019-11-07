@@ -1,11 +1,12 @@
 # TodolistIOS
 ## Introduction
 
-A tsk reminder app aims to provide equivalent experience with "Microsoft To Do" or "Todolist"
+A task reminder app aims to provide equivalent experience with "Microsoft To Do" or "Todolist".
 
 ## Preview
 
 <img src="Img/Preview 1.jpg" width="400">
+
 
 <img src="Img/Preview 2.jpg" width="400">
 
