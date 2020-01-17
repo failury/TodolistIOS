@@ -7,10 +7,8 @@
 //
 
 import Foundation
-import RealmSwift
 
-class ToDoItem : Object{
-    @objc dynamic var title : String = ""
-    @objc dynamic var mark : Bool = false
-    var parentFolder = LinkingObjects(fromType: Folder.self, property: "todoItems")
+class ToDoItem {
+    var title : String = ""
+    var mark : Bool = false
 }
