@@ -9,15 +9,7 @@
 import Foundation
 import Combine
 
-class Folder: Hashable, Identifiable, ObservableObject {
-    func hash(into hasher: inout Hasher) {
-        hasher.combine(id)
-    }
-    
-    static func == (lhs: Folder, rhs: Folder) -> Bool {
-        return lhs.id == rhs.id
-    }
-    
+class Folder: Identifiable, ObservableObject {
     var id = UUID()
     @Published var folderName : String = ""
     @Published var folderColor : String = ""
@@ -30,7 +22,7 @@ class Folder: Hashable, Identifiable, ObservableObject {
 }
 
 class FolderManager: ObservableObject {
-    @Published var folders: [Folder] = [Folder.init(name: "Hello1")]
+    @Published var folders: [Folder] = []
     
     func AddFolder(folder newElement: Folder) {
         self.folders.append(newElement)
