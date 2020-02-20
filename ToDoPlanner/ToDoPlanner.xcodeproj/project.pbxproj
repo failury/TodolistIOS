@@ -17,6 +17,8 @@
 		2137337E236CF5D80001F6A7 /* ToDoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2137337D236CF5D80001F6A7 /* ToDoItem.swift */; };
 		21373380236CF6030001F6A7 /* Folder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2137337F236CF6030001F6A7 /* Folder.swift */; };
 		2138A1402376615E00F8B88B /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2138A13F2376615E00F8B88B /* MainView.swift */; };
+		2166783A23EE54BA00C88BD0 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2166783923EE54BA00C88BD0 /* CardView.swift */; };
+		2166783C23EE601300C88BD0 /* TaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2166783B23EE601300C88BD0 /* TaskView.swift */; };
 		21CE58442388D43800FC7D80 /* ToDoItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21CE58432388D43800FC7D80 /* ToDoItemView.swift */; };
 		21CE58462388D58000FC7D80 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21CE58452388D58000FC7D80 /* Test.swift */; };
 		21CE58492388D7CE00FC7D80 /* FloatingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21CE58482388D7CE00FC7D80 /* FloatingButton.swift */; };
@@ -63,6 +65,8 @@
 		2137337D236CF5D80001F6A7 /* ToDoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoItem.swift; sourceTree = "<group>"; };
 		2137337F236CF6030001F6A7 /* Folder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Folder.swift; sourceTree = "<group>"; };
 		2138A13F2376615E00F8B88B /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		2166783923EE54BA00C88BD0 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		2166783B23EE601300C88BD0 /* TaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskView.swift; sourceTree = "<group>"; };
 		21CE58432388D43800FC7D80 /* ToDoItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoItemView.swift; sourceTree = "<group>"; };
 		21CE58452388D58000FC7D80 /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
 		21CE58482388D7CE00FC7D80 /* FloatingButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingButton.swift; sourceTree = "<group>"; };
@@ -186,6 +190,8 @@
 				21CE58432388D43800FC7D80 /* ToDoItemView.swift */,
 				C507E82223DAA890000700AD /* CreateTask.swift */,
 				21CE58452388D58000FC7D80 /* Test.swift */,
+				2166783923EE54BA00C88BD0 /* CardView.swift */,
+				2166783B23EE601300C88BD0 /* TaskView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -463,12 +469,14 @@
 				21CE584B2388E58500FC7D80 /* Core.swift in Sources */,
 				21373349236CF1080001F6A7 /* AppDelegate.swift in Sources */,
 				21CE58442388D43800FC7D80 /* ToDoItemView.swift in Sources */,
+				2166783C23EE601300C88BD0 /* TaskView.swift in Sources */,
 				21373380236CF6030001F6A7 /* Folder.swift in Sources */,
 				21CE58462388D58000FC7D80 /* Test.swift in Sources */,
 				2137334B236CF1080001F6A7 /* SceneDelegate.swift in Sources */,
 				2138A1402376615E00F8B88B /* MainView.swift in Sources */,
 				2137337E236CF5D80001F6A7 /* ToDoItem.swift in Sources */,
 				C507E82323DAA890000700AD /* CreateTask.swift in Sources */,
+				2166783A23EE54BA00C88BD0 /* CardView.swift in Sources */,
 				21CE58492388D7CE00FC7D80 /* FloatingButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

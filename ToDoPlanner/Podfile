@@ -6,10 +6,8 @@ target 'ToDoPlanner' do
   use_frameworks!
 
   # Pods for ToDoPlanner
-  pod 'RealmSwift'
-  pod 'SwipeCellKit'
-  pod 'ChameleonFramework/Swift', :git => 'https://github.com/luckychris/Chameleon.git', :inhibit_warnings => true
-
+  pod 'WaterfallGrid', '~> 0.4.0'
+  
   target 'ToDoPlannerTests' do
     inherit! :search_paths
     # Pods for testing

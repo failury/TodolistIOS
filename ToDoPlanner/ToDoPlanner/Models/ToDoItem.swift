@@ -8,7 +8,13 @@
 
 import Foundation
 
-class ToDoItem {
+struct ToDoItem: Identifiable {
+    var id = UUID()
     var title : String = ""
     var mark : Bool = false
+    
+    init(title: String, mark: Bool) {
+        self.title = title
+        self.mark = mark
+    }
 }

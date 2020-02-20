@@ -10,18 +10,24 @@ import SwiftUI
 
 struct CreateTask: View {
     @State var task:String = ""
+    
     var body: some View {
-        
         NavigationView {
             VStack(alignment: .leading){
                 Text("Add a Task").font(.title).padding()
                 TextField("Placeholder", text: $task).padding()
                 Spacer()
-                }.navigationBarItems(leading: Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
+                }
+                .navigationBarItems(leading: Button(action: {
+                    
+                }) {
                 Text("cancel")
-                },trailing: Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
+                },trailing: Button(action: {
+                    
+                }) {
                     Text("Save")
-            }).navigationBarTitle(Text("Create Todo"))
+                })
+                .navigationBarTitle(Text("Create Todo"))
         }
     }
 }
