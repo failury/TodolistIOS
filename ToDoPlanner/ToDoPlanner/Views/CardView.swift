@@ -33,8 +33,9 @@ struct CardView: View {
                     Spacer()
                     
                     Text(title)
-                        .font(.title)
+                        .fontWeight(.semibold)
                     Text(description)
+                        .font(.subheadline)
                         .fontWeight(.light)
                 }
                 .padding()
@@ -45,8 +46,6 @@ struct CardView: View {
         .sheet(isPresented: self.$presented) {
             TaskView()
         }
-        
-//        .overlay(RoundedRectangle(cornerRadius: 30, style: .continuous).stroke(lineWidth: 1))
     }
 }
 

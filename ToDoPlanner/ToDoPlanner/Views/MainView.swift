@@ -27,32 +27,50 @@ struct MainView: View {
     @EnvironmentObject var foldersManager: FolderManager
     
     var body: some View {
-//        NavigationView {
-//            ScrollView {
-//                ForEach(foldersManager.folders) { folder in
-//                    NavigationLink(destination: ToDoItemView()) {
-//                        Text(folder.folderName)
-//                    }
-//                    .frame(maxWidth: .infinity)
-//                    .overlay(
-//                        RoundedRectangle(cornerRadius: 16)
-//                            .stroke(Color.blue, lineWidth: 4)
-//                    )
-//                }
-//                .frame(maxHeight: .infinity)
-//                .navigationBarTitle("ToDo List")
-//            }
-//
-//        }
-//        .overlay(
-//            FloatingButton()
-//                .environmentObject(foldersManager)
-//        )
-        WaterfallGrid(ToDoData) { item in
-            CardView(title: item.title)
-                .frame(maxWidth: UIScreen.main.bounds.width / 2)
-                .frame(height: 150)
-        }.gridStyle(columns: 2, padding: EdgeInsets(top: 16, leading: 8, bottom: 16, trailing: 8))
+        //        NavigationView {
+        //            ScrollView {
+        //                ForEach(foldersManager.folders) { folder in
+        //                    NavigationLink(destination: ToDoItemView()) {
+        //                        Text(folder.folderName)
+        //                    }
+        //                    .frame(maxWidth: .infinity)
+        //                    .overlay(
+        //                        RoundedRectangle(cornerRadius: 16)
+        //                            .stroke(Color.blue, lineWidth: 4)
+        //                    )
+        //                }
+        //                .frame(maxHeight: .infinity)
+        //                .navigationBarTitle("ToDo List")
+        //            }
+        //
+        //        }
+        //        .overlay(
+        //            FloatingButton()
+        //                .environmentObject(foldersManager)
+        //        )
+        VStack(alignment: .leading) {
+            Text("Hightlight")
+                .font(.title)
+                .fontWeight(.bold)
+                .padding()
+            
+            WaterfallGrid(self.ToDoData) { item in
+                CardView(title: item.title)
+                    .frame(width: 180)
+                    .frame(maxHeight: .infinity)
+            }
+            .frame(height: 250)
+            .frame(maxWidth: .infinity)
+            .gridStyle(columns: 2,
+                       padding: EdgeInsets(top: 0,
+                                           leading: 16,
+                                           bottom: 16,
+                                           trailing: 16)
+            )
+            .scrollOptions(direction: .horizontal, showsIndicators: true)
+            
+            Spacer()
+        }
     }
 }
 
