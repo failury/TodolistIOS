@@ -68,6 +68,7 @@ struct MainView: View {
                                            trailing: 16)
             )
             .scrollOptions(direction: .horizontal, showsIndicators: true)
+            .padding(.top, -15)
             
             Spacer()
         }

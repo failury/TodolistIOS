@@ -24,21 +24,35 @@ struct CardView: View {
         Button(action: {
             self.presented.toggle()
         }) {
-            ZStack(alignment: .leading) {
+            ZStack(alignment: .center) {
                 bgColor
                 
-                VStack(alignment: .leading) {
-                    Image(systemName: icon)
-                    
+                HStack {
+                    VStack(alignment: .leading) {
+                        Image(systemName: icon)
+                        
+                        Spacer()
+                        
+                        Text(title)
+                            .fontWeight(.semibold)
+                        Text(description)
+                            .font(.subheadline)
+                            .fontWeight(.light)
+                    }
+                    .padding()
                     Spacer()
-                    
-                    Text(title)
-                        .fontWeight(.semibold)
-                    Text(description)
-                        .font(.subheadline)
-                        .fontWeight(.light)
                 }
-                .padding()
+                
+                HStack {
+                    Spacer()
+                    VStack {
+                        RingView(percent: .constant(30))
+                        .frame(width: 70, height: 70)
+                            .padding()
+                        Spacer()
+                    }
+                }
+            
             }
             .clipShape(RoundedRectangle(cornerRadius: 20, style: .continuous))
         }
