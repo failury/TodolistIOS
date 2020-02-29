@@ -8,24 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		151BEDA0AD0A8AC5F86819BD2CCE8ACA /* Pods-ToDoPlannerTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E0C47205236B99ABC8D9B101FA4DB7C7 /* Pods-ToDoPlannerTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		25096B5658932384F66FE73CD783AFE3 /* PreferenceSetter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB536A30B10217BEF59539A5BBB8C936 /* PreferenceSetter.swift */; };
+		25096B5658932384F66FE73CD783AFE3 /* PreferenceSetter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E01A882AA8B8B5ADFCA4FA48A1E82E /* PreferenceSetter.swift */; };
 		3FCA8F3AF6F93A437E9A048DC1633A00 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 350750CC7B26F5D1183C0B0DF981C30E /* Foundation.framework */; };
-		3FF881A38E8C4F2A9DF31BE23CF9C1B7 /* WaterfallGrid-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 56F935C34C039022B45114A53A7D0E7C /* WaterfallGrid-dummy.m */; };
-		402501A676EAC0C4D5D3D9078CDE0D04 /* WaterfallGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5078AEA3B3AF000B09D1C89E9C8EC3B2 /* WaterfallGrid.swift */; };
+		3FF881A38E8C4F2A9DF31BE23CF9C1B7 /* WaterfallGrid-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F214919EBE7ED80EEB355A220F0FDB0 /* WaterfallGrid-dummy.m */; };
+		402501A676EAC0C4D5D3D9078CDE0D04 /* WaterfallGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E9545DBD3841C83320B5C03B700405D /* WaterfallGrid.swift */; };
 		49EEDCCC1E0B9AF2D295053F87B9DCB3 /* Pods-ToDoPlannerTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F8593D6B00FC8D07755C83A6DBE2D0CA /* Pods-ToDoPlannerTests-dummy.m */; };
-		5B907EB7A97EBA7FAB28EA5C983AE062 /* GridSyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6C8A270210D959E18D7AE4E167F30C /* GridSyle.swift */; };
-		65B51ABAB72E1BAB30E03D477EFAE80C /* ScrollOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65F4888D797CB4971574A229372533D /* ScrollOptions.swift */; };
-		7420D51AEFBEDC25148B04536E02345D /* View+ScrollOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 718E236AABB7A8B95B2FC5A45EB86C75 /* View+ScrollOptions.swift */; };
-		85509ACC182C25E0759CC512147CAA5A /* WaterfallGrid-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D527EBA41C9BDAC23E5EF6B7DA7E7B1F /* WaterfallGrid-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5B907EB7A97EBA7FAB28EA5C983AE062 /* GridSyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C932DF62BBB915E7B299D0D4AADEB8 /* GridSyle.swift */; };
+		65B51ABAB72E1BAB30E03D477EFAE80C /* ScrollOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B18245865B37A4BA5EA0A9629A8BEA /* ScrollOptions.swift */; };
+		7420D51AEFBEDC25148B04536E02345D /* View+ScrollOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA5EED765E08550609AF23F48999BFF /* View+ScrollOptions.swift */; };
+		85509ACC182C25E0759CC512147CAA5A /* WaterfallGrid-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AD0B87F60ADB8A6EFD2DA463774CE8C3 /* WaterfallGrid-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8F80C1E6842C3DD6ECB015148E50F52A /* Pods-ToDoPlanner-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 35089ED288B64F30D7BFF962306A7A87 /* Pods-ToDoPlanner-dummy.m */; };
 		91C82FDA9F2B31230A59BC9B9D691C5B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 350750CC7B26F5D1183C0B0DF981C30E /* Foundation.framework */; };
 		9607E40C8E4FBDAD0DD424DA834DEDAE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 350750CC7B26F5D1183C0B0DF981C30E /* Foundation.framework */; };
 		A23657B1A1886D8E963EFDFE48F1C4A2 /* Pods-ToDoPlanner-ToDoPlannerUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 73F0DE4CAC0F67177D2FCAC4F37AE3B3 /* Pods-ToDoPlanner-ToDoPlannerUITests-dummy.m */; };
-		A38878E360CA83DAD2B858615823232F /* PositiveNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF4FD9C4EC76ACB06C11C0790282163 /* PositiveNumber.swift */; };
+		A38878E360CA83DAD2B858615823232F /* PositiveNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D92D1802F9D80E80D14B0F87277CE5 /* PositiveNumber.swift */; };
 		A4C5033669C1FC81D6D46842193A7343 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 350750CC7B26F5D1183C0B0DF981C30E /* Foundation.framework */; };
 		AC485823271E0D635896BDB9AEDDA46C /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80E2909F464F1E009B5A0483107219A1 /* SwiftUI.framework */; };
-		D61482C4C2E27C73CCD84ED2E6B3EE86 /* View+GridStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A9BCB779F485261786BB6E25DA95FB /* View+GridStyle.swift */; };
-		DAC8A0D47F32186E426036C750172619 /* ElementPreference.swift in Sources */ = {isa = PBXBuildFile; fileRef = A395344761DF1D08861516507C05A436 /* ElementPreference.swift */; };
+		D61482C4C2E27C73CCD84ED2E6B3EE86 /* View+GridStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF461CC8EA273D96110AB434F6C5407C /* View+GridStyle.swift */; };
+		DAC8A0D47F32186E426036C750172619 /* ElementPreference.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D2E34B5DFDF522D552A83D953351CC /* ElementPreference.swift */; };
 		DF1017BB6317AE0CD77267A073733686 /* Pods-ToDoPlanner-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E5C9157D12515AB7D4F15B2FFD735D1 /* Pods-ToDoPlanner-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F22F8BDA952492AEDAFE46653CF7CC2D /* Pods-ToDoPlanner-ToDoPlannerUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A88D6588F5E4368051E0DC39D37D50FF /* Pods-ToDoPlanner-ToDoPlannerUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
@@ -57,51 +57,52 @@
 /* Begin PBXFileReference section */
 		00426F549C0CED51E2AD44B62397BF96 /* Pods-ToDoPlannerTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ToDoPlannerTests-acknowledgements.plist"; sourceTree = "<group>"; };
 		0BCB688AEB109F829CE547003D5C001A /* Pods-ToDoPlanner-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ToDoPlanner-acknowledgements.plist"; sourceTree = "<group>"; };
-		0EF4FD9C4EC76ACB06C11C0790282163 /* PositiveNumber.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PositiveNumber.swift; path = Sources/WaterfallGrid/Environment/PositiveNumber.swift; sourceTree = "<group>"; };
+		0D236D0FD000434917FD472E8468C530 /* WaterfallGrid-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "WaterfallGrid-Info.plist"; sourceTree = "<group>"; };
 		11EA58593D88CDE9109BD1DFEB0A883E /* Pods-ToDoPlannerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ToDoPlannerTests.debug.xcconfig"; sourceTree = "<group>"; };
 		13DB77BD188BF91500348B585A6DC099 /* Pods-ToDoPlanner-ToDoPlannerUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ToDoPlanner-ToDoPlannerUITests.modulemap"; sourceTree = "<group>"; };
 		15197ED922EDC49C1DE956313FABBBA9 /* Pods-ToDoPlannerTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ToDoPlannerTests-Info.plist"; sourceTree = "<group>"; };
+		1DA196D53D6833B25932A281E171BA10 /* WaterfallGrid.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WaterfallGrid.release.xcconfig; sourceTree = "<group>"; };
 		1E5C9157D12515AB7D4F15B2FFD735D1 /* Pods-ToDoPlanner-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ToDoPlanner-umbrella.h"; sourceTree = "<group>"; };
 		1EFD44D5BCF9B9D4B5C5C3D7E108DA41 /* Pods-ToDoPlanner-ToDoPlannerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ToDoPlanner-ToDoPlannerUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		1FA5EED765E08550609AF23F48999BFF /* View+ScrollOptions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "View+ScrollOptions.swift"; path = "Sources/WaterfallGrid/View+ScrollOptions.swift"; sourceTree = "<group>"; };
 		2DE43D7EAFD5AEF32337DF9BA49511A2 /* Pods-ToDoPlanner.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ToDoPlanner.modulemap"; sourceTree = "<group>"; };
 		350750CC7B26F5D1183C0B0DF981C30E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		35089ED288B64F30D7BFF962306A7A87 /* Pods-ToDoPlanner-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ToDoPlanner-dummy.m"; sourceTree = "<group>"; };
 		3E39B6D985E0AB0E695F97F05FDEE4EB /* Pods-ToDoPlanner-ToDoPlannerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ToDoPlanner-ToDoPlannerUITests.release.xcconfig"; sourceTree = "<group>"; };
 		3E6F4D2ED3254014DC9CE0151A4667B1 /* Pods-ToDoPlanner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ToDoPlanner.debug.xcconfig"; sourceTree = "<group>"; };
-		421121A6A88DA597D0E85AB6AA4D2E49 /* WaterfallGrid.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = WaterfallGrid.modulemap; sourceTree = "<group>"; };
+		3F214919EBE7ED80EEB355A220F0FDB0 /* WaterfallGrid-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "WaterfallGrid-dummy.m"; sourceTree = "<group>"; };
 		432D11EC06BCC667D2693C5949A15828 /* Pods-ToDoPlanner-ToDoPlannerUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ToDoPlanner-ToDoPlannerUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		5078AEA3B3AF000B09D1C89E9C8EC3B2 /* WaterfallGrid.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WaterfallGrid.swift; path = Sources/WaterfallGrid/WaterfallGrid.swift; sourceTree = "<group>"; };
-		56F935C34C039022B45114A53A7D0E7C /* WaterfallGrid-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "WaterfallGrid-dummy.m"; sourceTree = "<group>"; };
+		63B18245865B37A4BA5EA0A9629A8BEA /* ScrollOptions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ScrollOptions.swift; path = Sources/WaterfallGrid/Environment/ScrollOptions.swift; sourceTree = "<group>"; };
 		6BEB068461B6E7990F22E1D6870B7039 /* Pods-ToDoPlannerTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ToDoPlannerTests.modulemap"; sourceTree = "<group>"; };
-		718E236AABB7A8B95B2FC5A45EB86C75 /* View+ScrollOptions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "View+ScrollOptions.swift"; path = "Sources/WaterfallGrid/View+ScrollOptions.swift"; sourceTree = "<group>"; };
 		73F0DE4CAC0F67177D2FCAC4F37AE3B3 /* Pods-ToDoPlanner-ToDoPlannerUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ToDoPlanner-ToDoPlannerUITests-dummy.m"; sourceTree = "<group>"; };
 		75414556A229551F01DE95B2E7188312 /* Pods-ToDoPlanner-ToDoPlannerUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ToDoPlanner-ToDoPlannerUITests-Info.plist"; sourceTree = "<group>"; };
 		80E2909F464F1E009B5A0483107219A1 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/SwiftUI.framework; sourceTree = DEVELOPER_DIR; };
+		8E9545DBD3841C83320B5C03B700405D /* WaterfallGrid.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WaterfallGrid.swift; path = Sources/WaterfallGrid/WaterfallGrid.swift; sourceTree = "<group>"; };
 		98CC15CA472B26ED2C85171B1FE6B6CE /* Pods-ToDoPlannerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ToDoPlannerTests.release.xcconfig"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A1C2FB6486277AD3CEDFBAFFDB051F16 /* Pods_ToDoPlanner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ToDoPlanner.framework; path = "Pods-ToDoPlanner.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A395344761DF1D08861516507C05A436 /* ElementPreference.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ElementPreference.swift; path = Sources/WaterfallGrid/Preference/ElementPreference.swift; sourceTree = "<group>"; };
-		A65F4888D797CB4971574A229372533D /* ScrollOptions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ScrollOptions.swift; path = Sources/WaterfallGrid/Environment/ScrollOptions.swift; sourceTree = "<group>"; };
+		A1C932DF62BBB915E7B299D0D4AADEB8 /* GridSyle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GridSyle.swift; path = Sources/WaterfallGrid/Environment/GridSyle.swift; sourceTree = "<group>"; };
+		A3F598F018BC5C09FFEC8627D8D60D04 /* WaterfallGrid-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WaterfallGrid-prefix.pch"; sourceTree = "<group>"; };
 		A88D6588F5E4368051E0DC39D37D50FF /* Pods-ToDoPlanner-ToDoPlannerUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ToDoPlanner-ToDoPlannerUITests-umbrella.h"; sourceTree = "<group>"; };
-		AC6C8A270210D959E18D7AE4E167F30C /* GridSyle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GridSyle.swift; path = Sources/WaterfallGrid/Environment/GridSyle.swift; sourceTree = "<group>"; };
+		AD0B87F60ADB8A6EFD2DA463774CE8C3 /* WaterfallGrid-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WaterfallGrid-umbrella.h"; sourceTree = "<group>"; };
 		B29281CF0C6293BA03A8838E8F05404D /* Pods-ToDoPlanner-ToDoPlannerUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ToDoPlanner-ToDoPlannerUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		C3D2E34B5DFDF522D552A83D953351CC /* ElementPreference.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ElementPreference.swift; path = Sources/WaterfallGrid/Preference/ElementPreference.swift; sourceTree = "<group>"; };
+		C43AF7B4FFF85B381FC835E663606904 /* WaterfallGrid.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WaterfallGrid.debug.xcconfig; sourceTree = "<group>"; };
 		C66A4541954296F7FF35F680B5CD7803 /* Pods-ToDoPlanner-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ToDoPlanner-acknowledgements.markdown"; sourceTree = "<group>"; };
-		CCDC666209803BEDEFE3DBA3101D11D9 /* WaterfallGrid-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "WaterfallGrid-Info.plist"; sourceTree = "<group>"; };
-		CEC05C8154000B802E2D4CBE771EF0DE /* WaterfallGrid.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WaterfallGrid.xcconfig; sourceTree = "<group>"; };
+		CF461CC8EA273D96110AB434F6C5407C /* View+GridStyle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "View+GridStyle.swift"; path = "Sources/WaterfallGrid/View+GridStyle.swift"; sourceTree = "<group>"; };
 		D09CEB3E493EB74C2171A795437FD04D /* Pods-ToDoPlanner-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ToDoPlanner-frameworks.sh"; sourceTree = "<group>"; };
 		D421D4BBEFBCC7E655545BD6CC7AFCB1 /* Pods-ToDoPlannerTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ToDoPlannerTests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		D527EBA41C9BDAC23E5EF6B7DA7E7B1F /* WaterfallGrid-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WaterfallGrid-umbrella.h"; sourceTree = "<group>"; };
 		D5AE94972B7D20C5F9ABD74310DFAB7C /* Pods-ToDoPlanner-ToDoPlannerUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ToDoPlanner-ToDoPlannerUITests-frameworks.sh"; sourceTree = "<group>"; };
+		D82D9342226C94B3AA6FE54EA3D0FFD3 /* WaterfallGrid.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = WaterfallGrid.modulemap; sourceTree = "<group>"; };
+		D8D92D1802F9D80E80D14B0F87277CE5 /* PositiveNumber.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PositiveNumber.swift; path = Sources/WaterfallGrid/Environment/PositiveNumber.swift; sourceTree = "<group>"; };
 		E0300FA08041EA6BD5ED257CE747E588 /* Pods-ToDoPlanner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ToDoPlanner.release.xcconfig"; sourceTree = "<group>"; };
 		E0C47205236B99ABC8D9B101FA4DB7C7 /* Pods-ToDoPlannerTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ToDoPlannerTests-umbrella.h"; sourceTree = "<group>"; };
 		E3A0609525C5B681751F703B88451CB1 /* WaterfallGrid.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = WaterfallGrid.framework; path = WaterfallGrid.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E4A9BCB779F485261786BB6E25DA95FB /* View+GridStyle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "View+GridStyle.swift"; path = "Sources/WaterfallGrid/View+GridStyle.swift"; sourceTree = "<group>"; };
+		E3E01A882AA8B8B5ADFCA4FA48A1E82E /* PreferenceSetter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PreferenceSetter.swift; path = Sources/WaterfallGrid/Preference/PreferenceSetter.swift; sourceTree = "<group>"; };
 		E78B840518F6C6CF89F0D222A18B9BD6 /* Pods-ToDoPlanner-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ToDoPlanner-Info.plist"; sourceTree = "<group>"; };
 		E7D39451323DB25CE35F8AA86CC663FA /* Pods_ToDoPlanner_ToDoPlannerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ToDoPlanner_ToDoPlannerUITests.framework; path = "Pods-ToDoPlanner-ToDoPlannerUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB74692AB67D135C01FB72C217DD563A /* Pods_ToDoPlannerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ToDoPlannerTests.framework; path = "Pods-ToDoPlannerTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		F5CCD495F3127A994A608C0192F54538 /* WaterfallGrid-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WaterfallGrid-prefix.pch"; sourceTree = "<group>"; };
 		F8593D6B00FC8D07755C83A6DBE2D0CA /* Pods-ToDoPlannerTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ToDoPlannerTests-dummy.m"; sourceTree = "<group>"; };
-		FB536A30B10217BEF59539A5BBB8C936 /* PreferenceSetter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PreferenceSetter.swift; path = Sources/WaterfallGrid/Preference/PreferenceSetter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,10 +160,25 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
+		55126B166F9D62E54B85A409CEF75998 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D82D9342226C94B3AA6FE54EA3D0FFD3 /* WaterfallGrid.modulemap */,
+				3F214919EBE7ED80EEB355A220F0FDB0 /* WaterfallGrid-dummy.m */,
+				0D236D0FD000434917FD472E8468C530 /* WaterfallGrid-Info.plist */,
+				A3F598F018BC5C09FFEC8627D8D60D04 /* WaterfallGrid-prefix.pch */,
+				AD0B87F60ADB8A6EFD2DA463774CE8C3 /* WaterfallGrid-umbrella.h */,
+				C43AF7B4FFF85B381FC835E663606904 /* WaterfallGrid.debug.xcconfig */,
+				1DA196D53D6833B25932A281E171BA10 /* WaterfallGrid.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/WaterfallGrid";
+			sourceTree = "<group>";
+		};
 		6B9A8D4243AB27712BFF7B51E2FC3676 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				BE195BE891FB7F2A1783DE15C717A120 /* WaterfallGrid */,
+				83D332D3E5AE62563B15297E2CBCE61F /* WaterfallGrid */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -203,6 +219,23 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
+		83D332D3E5AE62563B15297E2CBCE61F /* WaterfallGrid */ = {
+			isa = PBXGroup;
+			children = (
+				C3D2E34B5DFDF522D552A83D953351CC /* ElementPreference.swift */,
+				A1C932DF62BBB915E7B299D0D4AADEB8 /* GridSyle.swift */,
+				D8D92D1802F9D80E80D14B0F87277CE5 /* PositiveNumber.swift */,
+				E3E01A882AA8B8B5ADFCA4FA48A1E82E /* PreferenceSetter.swift */,
+				63B18245865B37A4BA5EA0A9629A8BEA /* ScrollOptions.swift */,
+				CF461CC8EA273D96110AB434F6C5407C /* View+GridStyle.swift */,
+				1FA5EED765E08550609AF23F48999BFF /* View+ScrollOptions.swift */,
+				8E9545DBD3841C83320B5C03B700405D /* WaterfallGrid.swift */,
+				55126B166F9D62E54B85A409CEF75998 /* Support Files */,
+			);
+			name = WaterfallGrid;
+			path = WaterfallGrid;
+			sourceTree = "<group>";
+		};
 		8DDFA1B149A2E1EECC03A8DD136063C3 /* Pods-ToDoPlanner */ = {
 			isa = PBXGroup;
 			children = (
@@ -218,23 +251,6 @@
 			);
 			name = "Pods-ToDoPlanner";
 			path = "Target Support Files/Pods-ToDoPlanner";
-			sourceTree = "<group>";
-		};
-		BE195BE891FB7F2A1783DE15C717A120 /* WaterfallGrid */ = {
-			isa = PBXGroup;
-			children = (
-				A395344761DF1D08861516507C05A436 /* ElementPreference.swift */,
-				AC6C8A270210D959E18D7AE4E167F30C /* GridSyle.swift */,
-				0EF4FD9C4EC76ACB06C11C0790282163 /* PositiveNumber.swift */,
-				FB536A30B10217BEF59539A5BBB8C936 /* PreferenceSetter.swift */,
-				A65F4888D797CB4971574A229372533D /* ScrollOptions.swift */,
-				E4A9BCB779F485261786BB6E25DA95FB /* View+GridStyle.swift */,
-				718E236AABB7A8B95B2FC5A45EB86C75 /* View+ScrollOptions.swift */,
-				5078AEA3B3AF000B09D1C89E9C8EC3B2 /* WaterfallGrid.swift */,
-				E24119818EC6009D704AFBC39302E360 /* Support Files */,
-			);
-			name = WaterfallGrid;
-			path = WaterfallGrid;
 			sourceTree = "<group>";
 		};
 		C7696075FD8A95F1CDB8B9A93D2D265D /* Pods-ToDoPlanner-ToDoPlannerUITests */ = {
@@ -263,20 +279,6 @@
 				6BD24C5798F69E9F5F10E8752CB509E3 /* Products */,
 				32EE71CEEF1247C2307846D6F0257D23 /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		E24119818EC6009D704AFBC39302E360 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				421121A6A88DA597D0E85AB6AA4D2E49 /* WaterfallGrid.modulemap */,
-				CEC05C8154000B802E2D4CBE771EF0DE /* WaterfallGrid.xcconfig */,
-				56F935C34C039022B45114A53A7D0E7C /* WaterfallGrid-dummy.m */,
-				CCDC666209803BEDEFE3DBA3101D11D9 /* WaterfallGrid-Info.plist */,
-				F5CCD495F3127A994A608C0192F54538 /* WaterfallGrid-prefix.pch */,
-				D527EBA41C9BDAC23E5EF6B7DA7E7B1F /* WaterfallGrid-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/WaterfallGrid";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -694,6 +696,42 @@
 			};
 			name = Release;
 		};
+		5869358B47B41AEDB6507D465B432BD4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C43AF7B4FFF85B381FC835E663606904 /* WaterfallGrid.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/WaterfallGrid/WaterfallGrid-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/WaterfallGrid/WaterfallGrid-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/WaterfallGrid/WaterfallGrid.modulemap";
+				PRODUCT_MODULE_NAME = WaterfallGrid;
+				PRODUCT_NAME = WaterfallGrid;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		5D6DA6F8846C55E516F4FCAD575E0FD1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E0300FA08041EA6BD5ED257CE747E588 /* Pods-ToDoPlanner.release.xcconfig */;
@@ -797,42 +835,6 @@
 			};
 			name = Debug;
 		};
-		8FA7FDFDF0DF87E7ED9B34F4FA508889 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = CEC05C8154000B802E2D4CBE771EF0DE /* WaterfallGrid.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/WaterfallGrid/WaterfallGrid-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/WaterfallGrid/WaterfallGrid-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/WaterfallGrid/WaterfallGrid.modulemap";
-				PRODUCT_MODULE_NAME = WaterfallGrid;
-				PRODUCT_NAME = WaterfallGrid;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.1;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		B05AACC1B073DA2ABF9FDA1098294D63 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1EFD44D5BCF9B9D4B5C5C3D7E108DA41 /* Pods-ToDoPlanner-ToDoPlannerUITests.debug.xcconfig */;
@@ -871,6 +873,43 @@
 			};
 			name = Debug;
 		};
+		DAD29C41221CB2972ECACC532E157E21 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1DA196D53D6833B25932A281E171BA10 /* WaterfallGrid.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/WaterfallGrid/WaterfallGrid-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/WaterfallGrid/WaterfallGrid-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/WaterfallGrid/WaterfallGrid.modulemap";
+				PRODUCT_MODULE_NAME = WaterfallGrid;
+				PRODUCT_NAME = WaterfallGrid;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		E14370E35D87377594A0629B22289789 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3E6F4D2ED3254014DC9CE0151A4667B1 /* Pods-ToDoPlanner.debug.xcconfig */;
@@ -908,43 +947,6 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
-		};
-		F946344929C57A3488DBE63CE1AC7B20 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = CEC05C8154000B802E2D4CBE771EF0DE /* WaterfallGrid.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/WaterfallGrid/WaterfallGrid-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/WaterfallGrid/WaterfallGrid-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/WaterfallGrid/WaterfallGrid.modulemap";
-				PRODUCT_MODULE_NAME = WaterfallGrid;
-				PRODUCT_NAME = WaterfallGrid;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.1;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
@@ -988,8 +990,8 @@
 		B4D3FA81DA8B3CA5F0EDF3DB563015A3 /* Build configuration list for PBXNativeTarget "WaterfallGrid" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8FA7FDFDF0DF87E7ED9B34F4FA508889 /* Debug */,
-				F946344929C57A3488DBE63CE1AC7B20 /* Release */,
+				5869358B47B41AEDB6507D465B432BD4 /* Debug */,
+				DAD29C41221CB2972ECACC532E157E21 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
