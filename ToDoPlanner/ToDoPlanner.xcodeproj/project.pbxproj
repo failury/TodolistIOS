@@ -33,6 +33,7 @@
 		3AAB92CFB52ED36251AA1433 /* Pods_ToDoPlannerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 146C7548D97723705883E911 /* Pods_ToDoPlannerTests.framework */; };
 		754F808522EC83570B02C881 /* Pods_ToDoPlanner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B2D80DA908D14DF3F3F4486 /* Pods_ToDoPlanner.framework */; };
 		C507E82323DAA890000700AD /* CreateTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = C507E82223DAA890000700AD /* CreateTask.swift */; };
+		C57DEF5C241348CD00F95259 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C57DEF5B241348CD00F95259 /* DetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +89,7 @@
 		5D218864E8772833C71C373B /* Pods-ToDoPlanner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToDoPlanner.debug.xcconfig"; path = "Target Support Files/Pods-ToDoPlanner/Pods-ToDoPlanner.debug.xcconfig"; sourceTree = "<group>"; };
 		8238A6DBD7DE2D4A0BB9B4EA /* Pods-ToDoPlannerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToDoPlannerTests.release.xcconfig"; path = "Target Support Files/Pods-ToDoPlannerTests/Pods-ToDoPlannerTests.release.xcconfig"; sourceTree = "<group>"; };
 		C507E82223DAA890000700AD /* CreateTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTask.swift; sourceTree = "<group>"; };
+		C57DEF5B241348CD00F95259 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		C88FF76FFC19E66700CDFFF5 /* Pods-ToDoPlanner-ToDoPlannerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToDoPlanner-ToDoPlannerUITests.debug.xcconfig"; path = "Target Support Files/Pods-ToDoPlanner-ToDoPlannerUITests/Pods-ToDoPlanner-ToDoPlannerUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		DB1E97F35984271C77EB8E8E /* Pods-ToDoPlannerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToDoPlannerTests.debug.xcconfig"; path = "Target Support Files/Pods-ToDoPlannerTests/Pods-ToDoPlannerTests.debug.xcconfig"; sourceTree = "<group>"; };
 		F349084EEC9B5F78B1861D2E /* Pods_ToDoPlanner_ToDoPlannerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ToDoPlanner_ToDoPlannerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -209,6 +211,7 @@
 				2166783B23EE601300C88BD0 /* TaskView.swift */,
 				21AAF25A2400BAB100BCA5BA /* RingView.swift */,
 				21AAF25C2400CC0000BCA5BA /* ItemView.swift */,
+				C57DEF5B241348CD00F95259 /* DetailView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -508,6 +511,7 @@
 				21AAF25D2400CC0000BCA5BA /* ItemView.swift in Sources */,
 				03628C80241338E700931342 /* AddCateView.swift in Sources */,
 				21AAF266240DB4E100BCA5BA /* Extensions.swift in Sources */,
+				C57DEF5C241348CD00F95259 /* DetailView.swift in Sources */,
 				2166783A23EE54BA00C88BD0 /* CardView.swift in Sources */,
 				21CE58492388D7CE00FC7D80 /* FloatingButton.swift in Sources */,
 			);
