@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		03628C7A240A0E5700931342 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03628C79240A0E5700931342 /* MenuView.swift */; };
+		03628C80241338E700931342 /* AddCateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03628C7F241338E700931342 /* AddCateView.swift */; };
 		21373349236CF1080001F6A7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21373348236CF1080001F6A7 /* AppDelegate.swift */; };
 		2137334B236CF1080001F6A7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2137334A236CF1080001F6A7 /* SceneDelegate.swift */; };
 		2137334F236CF10A0001F6A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2137334E236CF10A0001F6A7 /* Assets.xcassets */; };
@@ -51,6 +52,7 @@
 
 /* Begin PBXFileReference section */
 		03628C79240A0E5700931342 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		03628C7F241338E700931342 /* AddCateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AddCateView.swift; path = ToDoPlanner/AddCateView.swift; sourceTree = SOURCE_ROOT; };
 		146C7548D97723705883E911 /* Pods_ToDoPlannerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ToDoPlannerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		16F95A1AC46C40B9AEAA6145 /* Pods-ToDoPlanner-ToDoPlannerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToDoPlanner-ToDoPlannerUITests.release.xcconfig"; path = "Target Support Files/Pods-ToDoPlanner-ToDoPlannerUITests/Pods-ToDoPlanner-ToDoPlannerUITests.release.xcconfig"; sourceTree = "<group>"; };
 		21373345236CF1080001F6A7 /* ToDoPlanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoPlanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -192,6 +194,7 @@
 		2138A13E2376614D00F8B88B /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				03628C7F241338E700931342 /* AddCateView.swift */,
 				2138A13F2376615E00F8B88B /* MainView.swift */,
 				03628C79240A0E5700931342 /* MenuView.swift */,
 				21CE58432388D43800FC7D80 /* ToDoItemView.swift */,
@@ -488,6 +491,7 @@
 				03628C7A240A0E5700931342 /* MenuView.swift in Sources */,
 				C507E82323DAA890000700AD /* CreateTask.swift in Sources */,
 				21AAF25D2400CC0000BCA5BA /* ItemView.swift in Sources */,
+				03628C80241338E700931342 /* AddCateView.swift in Sources */,
 				2166783A23EE54BA00C88BD0 /* CardView.swift in Sources */,
 				21CE58492388D7CE00FC7D80 /* FloatingButton.swift in Sources */,
 			);
