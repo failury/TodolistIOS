@@ -10,29 +10,55 @@ import SwiftUI
 
 struct ItemView: View {
     @State private var isChecked = false
+    @State private var isFaved = false
     
     var body: some View {
         HStack {
             Button(action: {
-                self.isChecked.toggle()
+                withAnimation(.linear) {
+                    self.isChecked.toggle()
+                }
             }) {
-                if (self.isChecked) {
+                if self.isChecked {
                     Image(systemName: "largecircle.fill.circle")
-                        .animation(.linear)
+                        .getStdFrame()
+                    
                 } else {
                     Image(systemName: "circle")
-                        .animation(.linear)
+                        .getStdFrame()
                 }
             }
+            .padding(5)
             
-            VStack {
+            VStack(alignment: .leading) {
                 Text("Title")
+                    .overlay(self.isChecked ? Rectangle().frame(height: 5) : nil)
+                
                 Text("Tasks")
+                    .font(.footnote)
             }
             
-            Image(systemName: "")
+            Spacer()
             
+            Button(action: {
+                withAnimation(.linear) {
+                    self.isFaved.toggle()
+                }
+            }) {
+                if self.isFaved {
+                    Image(systemName: "star.fill")
+                        .getStdFrame()
+                } else {
+                    Image(systemName: "star")
+                        .getStdFrame()
+                }
+                
+            }
+            .padding(5)
         }
+        .padding(10)
+        .background(Color.gray.opacity(0.5))
+        .clipShape(RoundedRectangle(cornerRadius: 10, style: .continuous))
     }
 }
 

@@ -22,6 +22,8 @@
 		2166783C23EE601300C88BD0 /* TaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2166783B23EE601300C88BD0 /* TaskView.swift */; };
 		21AAF25B2400BAB100BCA5BA /* RingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21AAF25A2400BAB100BCA5BA /* RingView.swift */; };
 		21AAF25D2400CC0000BCA5BA /* ItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21AAF25C2400CC0000BCA5BA /* ItemView.swift */; };
+		21AAF264240DB1CD00BCA5BA /* Modifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21AAF263240DB1CD00BCA5BA /* Modifiers.swift */; };
+		21AAF266240DB4E100BCA5BA /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21AAF265240DB4E100BCA5BA /* Extensions.swift */; };
 		21CE58442388D43800FC7D80 /* ToDoItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21CE58432388D43800FC7D80 /* ToDoItemView.swift */; };
 		21CE58462388D58000FC7D80 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21CE58452388D58000FC7D80 /* Test.swift */; };
 		21CE58492388D7CE00FC7D80 /* FloatingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21CE58482388D7CE00FC7D80 /* FloatingButton.swift */; };
@@ -73,6 +75,8 @@
 		2166783B23EE601300C88BD0 /* TaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskView.swift; sourceTree = "<group>"; };
 		21AAF25A2400BAB100BCA5BA /* RingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RingView.swift; sourceTree = "<group>"; };
 		21AAF25C2400CC0000BCA5BA /* ItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemView.swift; sourceTree = "<group>"; };
+		21AAF263240DB1CD00BCA5BA /* Modifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modifiers.swift; sourceTree = "<group>"; };
+		21AAF265240DB4E100BCA5BA /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		21CE58432388D43800FC7D80 /* ToDoItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoItemView.swift; sourceTree = "<group>"; };
 		21CE58452388D58000FC7D80 /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
 		21CE58482388D7CE00FC7D80 /* FloatingButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingButton.swift; sourceTree = "<group>"; };
@@ -146,6 +150,7 @@
 				21CE58472388D7B900FC7D80 /* Controls */,
 				2137337A236CF5170001F6A7 /* Models */,
 				2138A13E2376614D00F8B88B /* Views */,
+				21AAF262240DB11600BCA5BA /* Utilities */,
 				2137334E236CF10A0001F6A7 /* Assets.xcassets */,
 				21373353236CF10A0001F6A7 /* LaunchScreen.storyboard */,
 				21373356236CF10A0001F6A7 /* Info.plist */,
@@ -203,6 +208,15 @@
 				21AAF25C2400CC0000BCA5BA /* ItemView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		21AAF262240DB11600BCA5BA /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				21AAF263240DB1CD00BCA5BA /* Modifiers.swift */,
+				21AAF265240DB4E100BCA5BA /* Extensions.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 		21CE58472388D7B900FC7D80 /* Controls */ = {
@@ -487,7 +501,9 @@
 				2137337E236CF5D80001F6A7 /* ToDoItem.swift in Sources */,
 				03628C7A240A0E5700931342 /* MenuView.swift in Sources */,
 				C507E82323DAA890000700AD /* CreateTask.swift in Sources */,
+				21AAF264240DB1CD00BCA5BA /* Modifiers.swift in Sources */,
 				21AAF25D2400CC0000BCA5BA /* ItemView.swift in Sources */,
+				21AAF266240DB4E100BCA5BA /* Extensions.swift in Sources */,
 				2166783A23EE54BA00C88BD0 /* CardView.swift in Sources */,
 				21CE58492388D7CE00FC7D80 /* FloatingButton.swift in Sources */,
 			);
@@ -700,7 +716,9 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BLHQ787DMR;
 				INFOPLIST_FILE = ToDoPlannerTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -722,7 +740,9 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BLHQ787DMR;
 				INFOPLIST_FILE = ToDoPlannerTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -744,6 +764,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BLHQ787DMR;
 				INFOPLIST_FILE = ToDoPlannerUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -764,6 +785,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BLHQ787DMR;
 				INFOPLIST_FILE = ToDoPlannerUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

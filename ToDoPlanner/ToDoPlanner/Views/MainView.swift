@@ -63,14 +63,19 @@ struct MainView: View {
             .frame(maxWidth: .infinity)
             .gridStyle(columns: 2,
                        padding: EdgeInsets(top: 0,
-                                           leading: 16,
-                                           bottom: 16,
-                                           trailing: 16)
+                                           leading: 10,
+                                           bottom: 10,
+                                           trailing: 10)
             )
             .scrollOptions(direction: .horizontal, showsIndicators: true)
             .padding(.top, -15)
             
-            Spacer()
+            ScrollView {
+                ForEach(0...10, id: \.self) { _ in
+                    ItemView()
+                        .padding(.horizontal, 10)
+                }
+            }
         }
     }
 }
