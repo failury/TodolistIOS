@@ -22,6 +22,7 @@ struct FloatingControl<Content: View>: View {
             rightButton
             leftButton
         }
+        
     }
 }
 
