@@ -19,6 +19,7 @@
 		2137337E236CF5D80001F6A7 /* ToDoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2137337D236CF5D80001F6A7 /* ToDoItem.swift */; };
 		21373380236CF6030001F6A7 /* Folder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2137337F236CF6030001F6A7 /* Folder.swift */; };
 		2138A1402376615E00F8B88B /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2138A13F2376615E00F8B88B /* MainView.swift */; };
+		213A7AC22413472900CC1B2E /* FloatingControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 213A7AC12413472900CC1B2E /* FloatingControl.swift */; };
 		2166783A23EE54BA00C88BD0 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2166783923EE54BA00C88BD0 /* CardView.swift */; };
 		2166783C23EE601300C88BD0 /* TaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2166783B23EE601300C88BD0 /* TaskView.swift */; };
 		21AAF25B2400BAB100BCA5BA /* RingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21AAF25A2400BAB100BCA5BA /* RingView.swift */; };
@@ -73,6 +74,7 @@
 		2137337D236CF5D80001F6A7 /* ToDoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoItem.swift; sourceTree = "<group>"; };
 		2137337F236CF6030001F6A7 /* Folder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Folder.swift; sourceTree = "<group>"; };
 		2138A13F2376615E00F8B88B /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		213A7AC12413472900CC1B2E /* FloatingControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingControl.swift; sourceTree = "<group>"; };
 		2166783923EE54BA00C88BD0 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		2166783B23EE601300C88BD0 /* TaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskView.swift; sourceTree = "<group>"; };
 		21AAF25A2400BAB100BCA5BA /* RingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RingView.swift; sourceTree = "<group>"; };
@@ -209,6 +211,7 @@
 				2166783B23EE601300C88BD0 /* TaskView.swift */,
 				21AAF25A2400BAB100BCA5BA /* RingView.swift */,
 				21AAF25C2400CC0000BCA5BA /* ItemView.swift */,
+				213A7AC12413472900CC1B2E /* FloatingControl.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -505,6 +508,7 @@
 				03628C7A240A0E5700931342 /* MenuView.swift in Sources */,
 				C507E82323DAA890000700AD /* CreateTask.swift in Sources */,
 				21AAF264240DB1CD00BCA5BA /* Modifiers.swift in Sources */,
+				213A7AC22413472900CC1B2E /* FloatingControl.swift in Sources */,
 				21AAF25D2400CC0000BCA5BA /* ItemView.swift in Sources */,
 				03628C80241338E700931342 /* AddCateView.swift in Sources */,
 				21AAF266240DB4E100BCA5BA /* Extensions.swift in Sources */,
