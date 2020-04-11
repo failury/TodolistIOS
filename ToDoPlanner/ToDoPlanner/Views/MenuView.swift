@@ -10,6 +10,7 @@ import SwiftUI
 
 struct MenuView: View {
     @State var show = false
+    @State var categoryArray : [String] = []
     
     init() {
         UITableView.appearance().separatorColor = .clear
@@ -28,7 +29,7 @@ struct MenuView: View {
                     Spacer()
                 }
                 DividerLine()
-                ListView()
+                ListView(categoryArray: categoryArray)
             }
             Spacer()
             HStack{
@@ -36,7 +37,7 @@ struct MenuView: View {
                 Addbutton(isShowAddCate: $show)
             }
         }
-        .overlay(self.show ? AddCateView() : nil)
+        .overlay(self.show ? AddCateView(isShowAddCate: $show, categoryArray: $categoryArray) : nil)
         .padding()
     }
 }
@@ -128,10 +129,11 @@ struct DividerLine: View {
 }
 
 struct ListView: View {
-    var category: [String] = []
+    var categoryArray : [String]
+    
     var body: some View{
-        List(category.indices, id: \.self ) { index in
-            Text(self.category[index])
+        List(categoryArray.indices, id: \.self ) { index in
+            Text(self.categoryArray[index])
         }
     }
 }
