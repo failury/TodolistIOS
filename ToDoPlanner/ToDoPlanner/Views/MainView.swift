@@ -25,7 +25,7 @@ struct MainView: View {
     
     @State var index = 0
     @EnvironmentObject var foldersManager: FolderManager
-    
+    @Binding var showMainView: Bool
     var body: some View {
         //        NavigationView {
         //            ScrollView {
@@ -49,10 +49,13 @@ struct MainView: View {
         //                .environmentObject(foldersManager)
         //        )
         VStack(alignment: .leading) {
-            Text("Hightlight")
+            Button(action: {self.showMainView.toggle()}) {
+                        Text("Hightlight")
                 .font(.title)
                 .fontWeight(.bold)
                 .padding()
+
+            }
             
             WaterfallGrid(self.ToDoData) { item in
                 CardView(title: item.title)
@@ -76,12 +79,8 @@ struct MainView: View {
                         .padding(.horizontal, 10)
                 }
             }
-        }
+           
+        }.background(Color.white)
     }
 }
 
-struct MainView_Previews: PreviewProvider {
-    static var previews: some View {
-        MainView().environmentObject(Core.foldersManager)
-    }
-}

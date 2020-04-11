@@ -9,36 +9,49 @@
 import SwiftUI
 
 struct MenuView: View {
+    @State var showMainvew: Bool = false
     @State var show = false
     @State var categoryArray : [String] = []
-    
     init() {
         UITableView.appearance().separatorColor = .clear
     }
     
     var body: some View {
-        VStack{
-            VStack (spacing: 20){
-                FindButton()
-                HStack{
-                    VStack{
-                        HighlightButton()
-                        CalendarButton()
-                        CompleteButton()
+        ZStack {
+
+            VStack{
+                VStack (spacing: 20){
+                    FindButton()
+                    HStack{
+                        VStack{
+                            HighlightButton(showMainvew:$showMainvew)
+                            CalendarButton()
+                            CompleteButton()
+                        }
+                        Spacer()
                     }
-                    Spacer()
+                    DividerLine()
+                    ListView(categoryArray: categoryArray)
                 }
-                DividerLine()
-                ListView(categoryArray: categoryArray)
-            }
-            Spacer()
-            HStack{
                 Spacer()
-                Addbutton(isShowAddCate: $show)
+                HStack{
+                    Spacer()
+                    Addbutton(isShowAddCate: $show)
+                }
+                
+            }
+            .overlay(self.show ? AddCateView(isShowAddCate: $show, categoryArray: $categoryArray) : nil)
+            .padding()
+            .background(Color.white)
+            .edgesIgnoringSafeArea(.bottom)
+            if showMainvew
+            {
+                MainView(showMainView: $showMainvew).environmentObject(Core.foldersManager)
+                
+                    .transition(.slide).animation(.easeInOut(duration: 0.8))
             }
         }
-        .overlay(self.show ? AddCateView(isShowAddCate: $show, categoryArray: $categoryArray) : nil)
-        .padding()
+        
     }
 }
 
@@ -68,16 +81,24 @@ struct FindButton: View {
 }
 
 struct HighlightButton: View {
+    @Binding var showMainvew: Bool
     var body: some View {
-        Button(action: {
-            
-        }) {
-            HStack (spacing: 10){
-                Image(systemName: "rectangle.3.offgrid.fill").foregroundColor(Color.blue)
-                Text("Highlight").foregroundColor(Color.black)
+        ZStack {
+            Button(action: {
+                    self.showMainvew.toggle()
+                
+            }) {
+                HStack (spacing: 10){
+                    Image(systemName: "rectangle.3.offgrid.fill").foregroundColor(Color.blue)
+                    Text("Highlight").foregroundColor(Color.black)
+                }
             }
+            
         }
+        
+        
     }
+    
 }
 
 struct CalendarButton: View {
