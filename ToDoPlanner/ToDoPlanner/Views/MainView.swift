@@ -10,17 +10,17 @@ import SwiftUI
 import WaterfallGrid
 
 struct MainView: View {
-    var ToDoData: [ToDoItem] = [
-        ToDoItem(title: "Task 1", mark: false),
-        ToDoItem(title: "Task 2", mark: false),
-        ToDoItem(title: "Task 3", mark: false),
-        ToDoItem(title: "Task 4", mark: false),
-        ToDoItem(title: "Task 5", mark: false),
-        ToDoItem(title: "Task 6", mark: false),
-        ToDoItem(title: "Task 7", mark: false),
-        ToDoItem(title: "Task 8", mark: false),
-        ToDoItem(title: "Task 9", mark: false),
-        ToDoItem(title: "Task 10", mark: false)
+    var ToDoData: [Task] = [
+        Task(title: "Task 1", mark: false),
+        Task(title: "Task 2", mark: false),
+        Task(title: "Task 3", mark: false),
+        Task(title: "Task 4", mark: false),
+        Task(title: "Task 5", mark: false),
+        Task(title: "Task 6", mark: false),
+        Task(title: "Task 7", mark: false),
+        Task(title: "Task 8", mark: false),
+        Task(title: "Task 9", mark: false),
+        Task(title: "Task 10", mark: false)
     ]
     
     @State var index = 0

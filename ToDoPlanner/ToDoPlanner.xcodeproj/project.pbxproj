@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		03628C7A240A0E5700931342 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03628C79240A0E5700931342 /* MenuView.swift */; };
 		03628C80241338E700931342 /* AddCateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03628C7F241338E700931342 /* AddCateView.swift */; };
+		21148621245D077B006D244A /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21148620245D077B006D244A /* Category.swift */; };
 		21373349236CF1080001F6A7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21373348236CF1080001F6A7 /* AppDelegate.swift */; };
 		2137334B236CF1080001F6A7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2137334A236CF1080001F6A7 /* SceneDelegate.swift */; };
 		2137334F236CF10A0001F6A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2137334E236CF10A0001F6A7 /* Assets.xcassets */; };
@@ -16,7 +17,7 @@
 		21373355236CF10A0001F6A7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21373353236CF10A0001F6A7 /* LaunchScreen.storyboard */; };
 		21373360236CF10A0001F6A7 /* ToDoPlannerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2137335F236CF10A0001F6A7 /* ToDoPlannerTests.swift */; };
 		2137336B236CF10A0001F6A7 /* ToDoPlannerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2137336A236CF10A0001F6A7 /* ToDoPlannerUITests.swift */; };
-		2137337E236CF5D80001F6A7 /* ToDoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2137337D236CF5D80001F6A7 /* ToDoItem.swift */; };
+		2137337E236CF5D80001F6A7 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2137337D236CF5D80001F6A7 /* Task.swift */; };
 		21373380236CF6030001F6A7 /* Folder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2137337F236CF6030001F6A7 /* Folder.swift */; };
 		2138A1402376615E00F8B88B /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2138A13F2376615E00F8B88B /* MainView.swift */; };
 		213A7AC22413472900CC1B2E /* FloatingControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 213A7AC12413472900CC1B2E /* FloatingControl.swift */; };
@@ -59,6 +60,7 @@
 		03628C7F241338E700931342 /* AddCateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AddCateView.swift; path = ToDoPlanner/AddCateView.swift; sourceTree = SOURCE_ROOT; };
 		146C7548D97723705883E911 /* Pods_ToDoPlannerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ToDoPlannerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		16F95A1AC46C40B9AEAA6145 /* Pods-ToDoPlanner-ToDoPlannerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToDoPlanner-ToDoPlannerUITests.release.xcconfig"; path = "Target Support Files/Pods-ToDoPlanner-ToDoPlannerUITests/Pods-ToDoPlanner-ToDoPlannerUITests.release.xcconfig"; sourceTree = "<group>"; };
+		21148620245D077B006D244A /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		21373345236CF1080001F6A7 /* ToDoPlanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoPlanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		21373348236CF1080001F6A7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2137334A236CF1080001F6A7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -72,7 +74,7 @@
 		21373366236CF10A0001F6A7 /* ToDoPlannerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToDoPlannerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2137336A236CF10A0001F6A7 /* ToDoPlannerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoPlannerUITests.swift; sourceTree = "<group>"; };
 		2137336C236CF10A0001F6A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2137337D236CF5D80001F6A7 /* ToDoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoItem.swift; sourceTree = "<group>"; };
+		2137337D236CF5D80001F6A7 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		2137337F236CF6030001F6A7 /* Folder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Folder.swift; sourceTree = "<group>"; };
 		2138A13F2376615E00F8B88B /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		213A7AC12413472900CC1B2E /* FloatingControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingControl.swift; sourceTree = "<group>"; };
@@ -194,8 +196,9 @@
 		2137337A236CF5170001F6A7 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				2137337D236CF5D80001F6A7 /* ToDoItem.swift */,
+				2137337D236CF5D80001F6A7 /* Task.swift */,
 				2137337F236CF6030001F6A7 /* Folder.swift */,
+				21148620245D077B006D244A /* Category.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -507,7 +510,7 @@
 				21AAF25B2400BAB100BCA5BA /* RingView.swift in Sources */,
 				2137334B236CF1080001F6A7 /* SceneDelegate.swift in Sources */,
 				2138A1402376615E00F8B88B /* MainView.swift in Sources */,
-				2137337E236CF5D80001F6A7 /* ToDoItem.swift in Sources */,
+				2137337E236CF5D80001F6A7 /* Task.swift in Sources */,
 				03628C7A240A0E5700931342 /* MenuView.swift in Sources */,
 				C507E82323DAA890000700AD /* CreateTask.swift in Sources */,
 				21AAF264240DB1CD00BCA5BA /* Modifiers.swift in Sources */,
@@ -518,6 +521,7 @@
 				C57DEF5C241348CD00F95259 /* DetailView.swift in Sources */,
 				2166783A23EE54BA00C88BD0 /* CardView.swift in Sources */,
 				21CE58492388D7CE00FC7D80 /* FloatingButton.swift in Sources */,
+				21148621245D077B006D244A /* Category.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

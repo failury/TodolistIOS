@@ -20,7 +20,7 @@ struct MenuView: View {
         ZStack {
 
             VStack{
-                VStack (spacing: 20){
+                VStack(spacing: 20) {
                     FindButton()
                     HStack{
                         VStack{
