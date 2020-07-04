@@ -1,6 +1,0 @@
-framework module Pods_TodolistIOS {
-  umbrella header "Pods-TodolistIOS-umbrella.h"
-
-  export *
-  module * { export * }
-}
