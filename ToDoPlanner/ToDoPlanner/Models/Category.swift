@@ -8,10 +8,10 @@
 
 import Foundation
 
-class Category: Identifiable {
+class Category:Identifiable,ObservableObject {
     var id = UUID()
-    var cateName: String!
-    var tasks = [Task]()
+    @Published var cateName: String!
+    var InheretedTasks : TaskManager?
     
     init(name: String) {
         self.cateName = name
@@ -20,8 +20,8 @@ class Category: Identifiable {
     
 }
 
-class CategoryManager {
-    var categories = [Category]()
+class CategoryManager: ObservableObject {
+    @Published var categories = [Category]()
     
     func AddCategory(name: String) {
         categories.append(Category(name: name))

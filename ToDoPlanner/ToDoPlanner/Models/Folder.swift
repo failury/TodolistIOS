@@ -13,7 +13,7 @@ class Folder: Identifiable, ObservableObject {
     var id = UUID()
     @Published var folderName : String = ""
     @Published var folderColor : String = ""
-    //let todoItems = List<ToDoItem>()
+
     
     init(name: String, color: String = "red") {
         folderName = name

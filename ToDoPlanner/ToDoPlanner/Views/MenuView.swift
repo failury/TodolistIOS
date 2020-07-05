@@ -46,7 +46,7 @@ struct MenuView: View {
             .edgesIgnoringSafeArea(.bottom)
             if showMainvew
             {
-                MainView(showMainView: $showMainvew).environmentObject(Core.foldersManager)
+                MainView(showMainView: $showMainvew).environmentObject(Core.categoryManager)
                 
                     .transition(.slide).animation(.easeInOut(duration: 0.8))
             }

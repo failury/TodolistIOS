@@ -9,7 +9,7 @@
 import SwiftUI
 
 struct FloatingButton: View {
-    @EnvironmentObject var folderManager: FolderManager
+    @EnvironmentObject var categoryManager: CategoryManager
     
     var body: some View {
         HStack {
@@ -17,7 +17,7 @@ struct FloatingButton: View {
             VStack {
                 Spacer()
                 Button(action: {
-                    self.folderManager.AddFolder(folder: .init(name: "Hello"))
+                    self.categoryManager.AddCategory(name: "Hello")
                 }) {
                     Image(systemName: "plus.circle")
                         .resizable()
@@ -31,6 +31,6 @@ struct FloatingButton: View {
 
 struct FloatingButton_Previews: PreviewProvider {
     static var previews: some View {
-        FloatingButton().environmentObject(Core.foldersManager)
+        FloatingButton().environmentObject(Core.categoryManager)
     }
 }

@@ -9,5 +9,5 @@
 import Foundation
 
 class Core {
-    static var foldersManager = FolderManager()
+    static var categoryManager = CategoryManager()
 }

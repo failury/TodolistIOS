@@ -11,20 +11,20 @@ import WaterfallGrid
 
 struct MainView: View {
     var ToDoData: [Task] = [
-        Task(title: "Task 1", mark: false),
-        Task(title: "Task 2", mark: false),
-        Task(title: "Task 3", mark: false),
-        Task(title: "Task 4", mark: false),
-        Task(title: "Task 5", mark: false),
-        Task(title: "Task 6", mark: false),
-        Task(title: "Task 7", mark: false),
-        Task(title: "Task 8", mark: false),
-        Task(title: "Task 9", mark: false),
-        Task(title: "Task 10", mark: false)
+        Task(title: "Task 1", mark: false, cate: "task"),
+        Task(title: "Task 2", mark: false, cate: "task"),
+        Task(title: "Task 3", mark: false, cate: "task"),
+        Task(title: "Task 4", mark: false, cate: "task"),
+        Task(title: "Task 5", mark: false, cate: "task"),
+        Task(title: "Task 6", mark: false, cate: "task"),
+        Task(title: "Task 7", mark: false, cate: "task"),
+        Task(title: "Task 8", mark: false, cate: "task"),
+        Task(title: "Task 9", mark: false, cate: "task"),
+        Task(title: "Task 10", mark: false, cate: "task")
     ]
     
     @State var index = 0
-    @EnvironmentObject var foldersManager: FolderManager
+    @EnvironmentObject var categoryManager: CategoryManager
     @Binding var showMainView: Bool
     var body: some View {
         //        NavigationView {
